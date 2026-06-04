@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Bilal Amin — Full-Stack Laravel Developer & Digital Product Architect | Islamabad, Pakistan</title>
+  <meta name="description" content="Bilal Amin is a Laravel-powered Full-Stack Developer and Digital Product Architect based in Islamabad, Pakistan. Specializing in ERP systems, POS platforms, and custom SaaS applications." />
+  <meta name="keywords" content="Bilal Amin, Bilal Amin Islamabad, Bilal Amin Laravel Developer, Bilal Amin Pakistan, Full Stack Developer Pakistan, ERP Developer Islamabad, Laravel Developer Pakistan, SaaS Developer, iibilalamin" />
+  <meta name="author" content="Bilal Amin" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bilalamin7.github.io/" />
+
+  <!-- Open Graph (Facebook, LinkedIn preview) -->
+  <meta property="og:title" content="Bilal Amin — Laravel Developer & Digital Product Architect" />
+  <meta property="og:description" content="Turning Ideas Into Impact | ERP & POS Solutions | Laravel & SaaS Architect based in Islamabad, Pakistan." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://bilalamin7.github.io/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="profile:first_name" content="Bilal" />
+  <meta property="profile:last_name" content="Amin" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bilal Amin — Laravel Developer & Digital Product Architect" />
+  <meta name="twitter:description" content="Full-Stack Laravel Developer based in Islamabad. ERP, POS, SaaS solutions." />
+
+  <!-- Schema.org Structured Data (makes Google show rich info) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bilal Amin",
+    "alternateName": "iibilalamin",
+    "jobTitle": "Full-Stack Laravel Developer & Digital Product Architect",
+    "description": "Bilal Amin is a Laravel-powered Full-Stack Developer and Software Solutions Provider based in Islamabad, Pakistan. Specializing in ERP systems, POS platforms, and custom SaaS applications.",
+    "url": "https://bilalamin7.github.io/",
+    "image": "https://bilalamin7.github.io/bilal.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/iibilalamin/",
+      "https://www.facebook.com/IIBilalAmin/",
+      "https://www.instagram.com/iibilalamin/",
+      "https://github.com/BilalAmin7"
+    ],
+    "knowsAbout": ["Laravel", "Full-Stack Development", "ERP Systems", "POS Systems", "SaaS Architecture", "PHP", "Web Development"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #111118;
+      --card: #16161f;
+      --border: #2a2a3a;
+      --accent: #00e5ff;
+      --accent2: #7c3aed;
+      --text: #f0f0f5;
+      --muted: #8888aa;
+      --green: #00ff88;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Animated background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at 20% 20%, rgba(124,58,237,0.08) 0%, transparent 50%),
+                  radial-gradient(ellipse at 80% 80%, rgba(0,229,255,0.06) 0%, transparent 50%);
+      animation: bgShift 12s ease-in-out infinite alternate;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @keyframes bgShift {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(3%, 3%); }
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 80px 0 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 28px;
+      animation: fadeUp 0.8s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    .avatar-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent);
+      display: block;
+      background: var(--card);
+    }
+
+    .avatar-placeholder {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+      color: #fff;
+      border: 2px solid var(--accent);
+    }
+
+    .status-dot {
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      width: 14px;
+      height: 14px;
+      background: var(--green);
+      border-radius: 50%;
+      border: 2px solid var(--bg);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(0,255,136,0.4); }
+      50%       { box-shadow: 0 0 0 6px rgba(0,255,136,0); }
+    }
+
+    .hero-text h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #fff 30%, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-text .tagline {
+      margin-top: 8px;
+      font-size: 1rem;
+      color: var(--accent);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 0.875rem;
+      margin-top: 6px;
+    }
+
+    .location svg { width: 14px; height: 14px; }
+
+    .bio {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: #c0c0d8;
+      max-width: 620px;
+      animation: fadeUp 0.8s 0.15s ease both;
+    }
+
+    .bio strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ── SKILLS ── */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      animation: fadeUp 0.8s 0.25s ease both;
+    }
+
+    .skill-tag {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 5px 14px;
+      border-radius: 100px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: all 0.2s;
+    }
+
+    .skill-tag:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(0,229,255,0.06);
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 48px 0;
+      animation: fadeUp 0.8s 0.3s ease both;
+    }
+
+    /* ── SERVICES ── */
+    .section-label {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      animation: fadeUp 0.8s 0.35s ease both;
+    }
+
+    .service-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      transition: all 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent2), var(--accent));
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+    .service-card:hover {
+      border-color: rgba(0,229,255,0.3);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+    }
+
+    .service-card:hover::before { opacity: 1; }
+
+    .service-icon {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .service-card p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ── SOCIAL LINKS ── */
+    .social-section {
+      animation: fadeUp 0.8s 0.45s ease both;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 18px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .social-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .social-link.linkedin:hover { border-color: #0a66c2; background: rgba(10,102,194,0.08); }
+    .social-link.github:hover   { border-color: #f0f6fc; background: rgba(240,246,252,0.06); }
+    .social-link.facebook:hover { border-color: #1877f2; background: rgba(24,119,242,0.08); }
+    .social-link.instagram:hover{ border-color: #e1306c; background: rgba(225,48,108,0.08); }
+
+    .social-icon {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 48px 0 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.78rem;
+      animation: fadeUp 0.8s 0.5s ease both;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 56px 0 40px; }
+      .hero-top { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <section class="hero" itemscope itemtype="https://schema.org/Person">
+    <div class="hero-top">
+      <div class="avatar-wrap">
+        <!-- Replace bilal.jpg with your actual photo filename after uploading -->
+        <img src="bilal.jpg" alt="Bilal Amin - Laravel Developer Islamabad" class="avatar"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+             itemprop="image" />
+        <div class="avatar-placeholder" style="display:none;">BA</div>
+        <span class="status-dot" title="Available for work"></span>
+      </div>
+      <div class="hero-text">
+        <h1 itemprop="name">Bilal Amin</h1>
+        <p class="tagline" itemprop="jobTitle">Laravel Developer & Digital Product Architect</p>
+        <p class="location" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span itemprop="addressLocality">Islamabad</span>, <span itemprop="addressCountry">Pakistan</span>
+        </p>
+      </div>
+    </div>
+
+    <p class="bio" itemprop="description">
+      <strong>Turning Ideas Into Impact.</strong> I'm Bilal Amin — a full-stack Laravel developer and software solutions provider based in Islamabad. I deliver complete digital systems — from <strong>ERP and POS platforms</strong> to custom <strong>SaaS applications</strong> — designed to streamline workflows, scale businesses, and drive measurable results.
+    </p>
+
+    <div class="skills">
+      <span class="skill-tag">Laravel</span>
+      <span class="skill-tag">Full-Stack Development</span>
+      <span class="skill-tag">ERP Solutions</span>
+      <span class="skill-tag">POS Systems</span>
+      <span class="skill-tag">SaaS Architecture</span>
+      <span class="skill-tag">Business-Driven Development</span>
+      <span class="skill-tag">Idea-to-Impact Execution</span>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SERVICES -->
+  <section style="animation: fadeUp 0.8s 0.3s ease both;">
+    <p class="section-label">What I Build</p>
+    <div class="services">
+      <div class="service-card">
+        <div class="service-icon">🏢</div>
+        <h3>ERP Solutions</h3>
+        <p>Custom enterprise systems that optimize operations, reporting, and business workflows end-to-end.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛒</div>
+        <h3>POS Systems</h3>
+        <p>Smart point-of-sale platforms for smarter sales tracking and inventory management.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">☁️</div>
+        <h3>SaaS Applications</h3>
+        <p>Scalable web applications built for growth — from architecture to deployment.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Consulting & Development</h3>
+        <p>End-to-end support: architecture, development, deployment, and long-term maintenance.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SOCIAL LINKS -->
+  <section class="social-section">
+    <p class="section-label">Find Me Online</p>
+    <div class="social-grid">
+
+      <a href="https://www.linkedin.com/in/iibilalamin/" target="_blank" rel="noopener" class="social-link linkedin" itemprop="sameAs">
+        <svg class="social-icon" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+
+      <a href="https://github.com/BilalAmin7" target="_blank" rel="noopener" class="social-link github" itemprop="sameAs">
+        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+      </a>
+
+      <a href="https://www.facebook.com/IIBilalAmin/" target="_blank" rel="noopener" class="social-link facebook" itemprop="sameAs">
+        <svg class="social-icon" viewBox="0 0 24 24" fill="#1877f2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
+
+      <a href="https://www.instagram.com/iibilalamin/" target="_blank" rel="noopener" class="social-link instagram" itemprop="sameAs">
+        <svg class="social-icon" viewBox="0 0 24 24" fill="url(#igGrad)">
+          <defs>
+            <linearGradient id="igGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#f09433"/>
+              <stop offset="25%" style="stop-color:#e6683c"/>
+              <stop offset="50%" style="stop-color:#dc2743"/>
+              <stop offset="75%" style="stop-color:#cc2366"/>
+              <stop offset="100%" style="stop-color:#bc1888"/>
+            </linearGradient>
+          </defs>
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+        </svg>
+        Instagram
+      </a>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <footer>
+    <p>© 2025 <strong style="color: var(--text)">Bilal Amin</strong> · Islamabad, Pakistan · <a href="mailto:">Full-Stack Laravel Developer</a></p>
+    <p style="margin-top: 8px; font-size: 0.72rem; color: #55556a;">bilalamin7.github.io · iibilalamin · Laravel · ERP · SaaS · Pakistan</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
